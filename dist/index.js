@@ -54,7 +54,7 @@ var NominatimJS = (function () {
                             params['accept-language'] = params.accept_language;
                         }
                         return [4 /*yield*/, superagent
-                                .get('http://nominatim.openstreetmap.org/search')
+                                .get('https://nominatim.openstreetmap.org/search')
                                 .query(params)
                                 .then(function (res) { return res.body || []; })];
                     case 1: return [2 /*return*/, _a.sent()];
